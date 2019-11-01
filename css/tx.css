@@ -1,0 +1,407 @@
+*{margin: 0 auto;padding: 0;}
+a{text-decoration: none;color: #999;}
+li{list-style: none;}
+@font-face {font-family:"HDD";src: url("../fonts/iconfont.ttf");}
+	
+	
+
+
+.videobox{width: 100%; height: 700px;}
+.videobox header{width: 100%; height: 40px; margin: 0 auto; background-color: #333;position: relative; z-index: 1;}
+.videobox header .con{width: width: 1030px;height: 40px;}
+.videobox header .con .left{width: 75px;height: 27px; float: left;margin-left: 10px;} 
+.videobox header .con .right{width: 100px; height: 27px; float: right;margin-top: 8px;}
+.videobox video{width: 100%; position: absolute;top: 0px;left: 0px;}
+
+
+/**********导航条 css部分***********/
+
+
+.videobox nav{width: 100%; height: 90px;background: rgba(100,100,100,0.5);position: relative;z-index: 1;}
+.videobox nav ul{width: 1030px;height: 90px;vertical-align: middle;/*垂直居中*/}	
+.videobox nav aside li{padding: 5px;}
+.videobox nav ul>li{float: left;margin-right: 15%;}	
+.videobox nav .left .one{width: 150px;height: 90px;line-height: 90px;}
+.videobox nav .left .one span{margin: 10px;color: #fff;font-size: 20px;font-family: "微软雅黑";}
+.videobox nav .left:hover aside{display: block;}	
+.videobox nav .left aside{width: 385px;height: 625px;display: none;background: rgba(0,0,0,0.2);position: absolute;top: 90px;left: 150px;}
+.videobox nav .left aside .tuA{;margin-top: 50px;margin-left: 15px;}
+.videobox nav .center input{width: 240px;height: 30px;border-radius: 15px;border: 1px solid #fff;background: rgba(0,0,0,0.3);color: #FFFDEF;font-size: 12px;background: url(../img/search.png) no-repeat 3px 3px;padding-left: 30px;outline: none;/*去掉外面的蓝的边框*/}	
+.videobox nav .left aside .zuo {float: left; color: white;}	
+.videobox nav .left aside .you {float: right;color: white;}
+.videobox nav .center{margin-top:30px ;}	
+.videobox nav .right{width: 150px;height: 32px;font-family: "HDD";margin-top: 35px;background: #ffo;}
+.videobox nav .right a{width: 32px;height: 32px;float: left;margin-left: 3px;border: 1px solid #fff;text-align: center;line-height: 32px;border-radius: 50%;display: block;/*超链变块状 需要设定宽高*/color: #ffffff;transition: all 1s ease;}
+.videobox nav .right a:hover{color:#333;box-shadow: 0 0 0 30px #fff inset; /*0 0 是左下移动多少 0 是模糊度 30是颜色宽带 #fff是颜色 insert是里面发光*/}
+	
+	
+
+.videobox .pic{ width: 100%; position: relative; }
+.videobox .pic ul{margin-top: 20px;}
+.videobox .pic ul label{display: block; width:200px;height:40px; color:#999;margin-top: -35px;}
+.videobox .pic ul .one{display: block; width: 250px;height: 40px; border: 1px solid white; border-radius: 40px;padding-top: 20px;text-align: center; margin-left: 450px;background: white;}
+.videobox .pic ul .two{display: block; width: 250px;height: 40px; border: 1px solid white ; border-radius: 40px;padding-top: 20px;text-align: center;margin-right: 475px; margin-top: -60px;background: white;}
+.videobox .pic ul span{display: block; width: 42px;height: 42px;font-family: "HDD";border: 1px solid #999;border-radius: 50%;background: #ffo;line-height: 42px;margin-left: 5px;margin-top: -11px;}
+.videobox .pic ul span:hover{background: #82BA8B;transition: all 1.5s ease;}	
+	
+
+
+
+/*最新单品*/
+.new {
+	height: 400px;
+	width: 1000px;
+	position: relative;
+	margin: 250px auto;
+	
+}
+
+.new header{
+	text-align: center;
+	
+}
+.new header img{
+	border-radius:40px;/*设置标题logo角得弧度*/
+}
+.new p{
+	text-align: center;
+	font-size:12px ;/*设置p段落字体的大小颜色*/
+	color:red;
+	margin: 5px;
+}
+.new ul {
+	height: 400px;
+	width: 900px;
+	
+	margin: 0 auto;
+}
+
+.new ul li {
+	display: block;
+	width: 250px;
+	
+	float: left;
+	height: 260px;
+	text-align: center;
+	margin: 15px;
+}
+
+.new li:nth-child(1) {
+	background-image: url(../img/pic1.jpg);
+}
+
+.new li:nth-child(2) {
+	background-image: url(../img/pic2.jpg);
+}
+
+.new li:nth-child(3) {
+	background-image: url(../img/pic3.jpg);
+}
+
+.new ul li hgroup {
+	position: relative;
+	
+	overflow: hidden;
+	background-color: black;
+	opacity: 0.6;
+	top: 0px;
+	height: 0px;
+}
+
+.new li:hover hgroup {
+	height: 260px;
+	transition: all 1s ease;
+}
+.new li hgroup h2{
+	margin: 20px;
+	color: azure;
+}
+.new hgroup h2:nth-child(2){
+	font-size:18px ;
+}
+.new hgroup h2:nth-child(3){
+	content:url(../img/jiantou.png);
+	
+	margin: 15px auto;
+	
+}
+.new hgroup h2:nth-child(4){
+	content: url(../img/anniu.png);
+	margin: 0 auto;
+	
+}
+/*
+ end
+ */
+
+
+/*我要试装*/
+.try{
+	
+	height: 600px;
+	width: 1200px;
+	margin: 0 auto;
+	
+	padding-top: 80px;
+	background-image: -webkit-linear-gradient(top, #82BA8B 50%,#FFFFFF 0%);
+	position: relative;
+	z-index: 2;
+	
+}
+
+.try header{
+	
+	text-align: center;
+	border-radius:40px;/*设置标题logo角得弧度*/
+	
+	
+}
+.try header img{
+	border-radius:40px;/*设置标题logo角得弧度*/
+}
+.try p{
+	text-align: center;
+	color: red;
+	font-size:12px ;/*设置p段落字体的大小颜色*/
+	margin: 5px;
+}
+.try ul{
+	height: 300px;
+	
+	width: 950px;
+	margin: 0 auto;
+}
+.try ul li{
+	position: relative;
+	list-style: none;
+	
+	display: block;
+	width: 300px;
+	float: left;
+	height: 260px;
+	margin: 5px;
+	
+}
+.try ul li .zheng {
+	width: 280px;
+	height: 300px;
+	position: relative;
+	left: 8px;
+	z-index: 2;
+	transform-style: preserve-3d;
+	transition: all 2s;
+	backface-visibility: hidden;/*定义背面不可见*/
+	 perspective: 800px;
+}
+
+.try ul li .fan {
+	width: 280px;
+	height: 300px;
+	display: block;
+	position: relative;
+	top: -305px;
+	z-index: -2;
+	transform-style: preserve-3d;
+	transition: all 2s;
+	perspective: 800px;
+}
+
+li:hover .zheng {
+	transform: rotateX(180deg);
+}
+
+li:hover .fan {
+	transform: rotateX(-360deg);
+}
+/*
+ end
+ */
+
+
+
+
+/*评测中心*/
+.text{
+	margin: 0 auto;
+
+	text-align: center;/*所有得元素居中*/
+	text-decoration: none;
+	
+}
+
+.text header img{
+	border-radius:40px;/*设置标题logo角得弧度*/
+}
+.text p{
+	font-size:12px ;/*设置p段落字体的大小颜色*/
+	color:red;
+}
+.text ul{
+	
+	height: 500px;
+	width: 950px;
+	padding: 10px;
+	margin: 0 auto;
+	/*设置ul的大小及居中*/
+}
+.text ul li{
+	border: 1px solid #aaa;
+	display: block;
+	width: 210px;
+	height: 210px;
+	float: left;
+	border-radius:50%;/*设置li的形状为圆形*/
+	z-index: 1;/*设置层数*/
+	position: relative;/*设置相对位置*/
+	margin: 10px;
+}
+.tihuan{
+	position: relative;/*设置相对位置*/
+	top: 0px;
+	border-radius:50% ;
+	z-index: -2;/*设置层数*/
+	display: none;
+	left: -2px;
+	
+	animation-name: aa;
+	animation-duration: 1s;
+	animation-play-state: paused;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	/*用于设置tihuan图片的特效,一开始设置为关闭运行,运行一次*/
+}
+.tu{
+	
+	top: 80px;
+	position: relative;
+	z-index: 1;
+	margin: 0;
+}/*设置tu的位置以及层数*/
+
+
+.text li:hover .tihuan{
+	display: block;
+	animation-play-state: running;
+}/*设置tihuan的运行,tihuan图片显示,程序启动*/
+
+
+.text li:hover .tu{
+	display: none;
+}/*隐藏tu的图片*/
+
+
+@keyframes aa{
+	from{transform: scale(0.99);}
+	to{transform: scale(0.9);}
+}/*设置tihuan图片的变化*/
+
+/*
+ end
+ */
+
+footer{
+	
+	height:400px ;
+	background-color:#545762;
+	margin: 0 auto;
+	
+	
+}/*设置footer的大小*/
+
+
+.logo{
+	
+	height: 100px;
+	
+	background-image: url(../img/logo1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+/*设置logo的大小,以及下边框的线*/
+	
+}/*设置logo*/
+footer form{
+	border-top:1px solid #aaa ;
+	width: 1180px;
+	height: 210px;
+	margin: 0 auto;
+}/*设置from区域的大小,来控制注册信息及留言的位置*/
+
+.message ul{
+	
+	height: 200px;
+	width: 450px;
+	margin-left: 90px;
+	float: left;
+}/*设置ul的浮动的位置及大小*/
+
+
+.message ul li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	width: 200px;
+	float: left;
+	text-align: left;
+}/*设置li元素的大小,以及浮动的位置*/
+
+
+.message ul li p{
+	color: aliceblue;
+	font-size: 12px;
+	
+}/*设置p标签的字体大小及颜色*/
+
+
+footer input{
+	border-radius:10px ;
+}/*设置各个input的角的的弧度*/
+
+.message ul li  .but{
+	width: 124px;
+	height: 42px;
+	background-image: url(../img/but.jpg);
+	margin-top:20px ;
+	cursor: pointer;/*让箭头变成手指头*/
+}/*设置.but的背景按钮图片*/
+
+footer .right{
+	text-align: left;
+	margin-top: 10px;
+	width: 600px;
+	float: right;
+}/*设置.reght的大小以及浮动方向*/
+
+footer .right textarea{
+	height: 140px;
+	width: 500px;
+}/*设置textarea元素的大小*/
+
+
+footer .right p{
+	color: aliceblue;
+	font-size: 12px;
+}/*设置字体颜色及大小*/
+
+
+/*
+ end
+ */
+
+
+/*版权*/
+
+.banquan a{
+	display: block;
+	background-color:#000000;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	color: azure;
+	text-align: center;
+}/*设置版号的大小,背景颜色,去除下划线,字体颜色*/
+
+
+/*
+ end
+ */
